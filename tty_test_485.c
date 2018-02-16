@@ -35,8 +35,8 @@ typedef struct {
     pthread_t id;
 } tds_Ch_Data;
 
-#define MAX_PORT 		( 3 )//最大串口数
-#define CLOCKID			( CLOCK_REALTIME )
+#define MAX_PORT 	( 3 )//最大串口数
+#define CLOCKID		( CLOCK_REALTIME )
 
 tds_Ch_Data ch_data[MAX_PORT];
 int RX_TIME_OUT_MS;//收报超时时间
