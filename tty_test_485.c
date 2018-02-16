@@ -19,19 +19,19 @@ enum port_status {
 };
 
 typedef struct {
-    uint	tx_lens;//发送数据个数
-    uint	rx_lens;//接收数据个数
-    uint 	tx_pkgs;//发送数据包个数
-    uint	rx_pkgs;//接受数据包个数
-    uint	err_lens;//错误的数据包个数
-    uint	err_pkgs;//错误的数据包个数
-    uint	lost_pkgs;//丢失的数据包个人数
-    uint	lost_lens;//丢失的数据包个人数
+    uint    tx_lens;//发送数据个数
+    uint    rx_lens;//接收数据个数
+    uint    tx_pkgs;//发送数据包个数
+    uint    rx_pkgs;//接受数据包个数
+    uint    err_lens;//错误的数据包个数
+    uint    err_pkgs;//错误的数据包个数
+    uint    lost_pkgs;//丢失的数据包个人数
+    uint    lost_lens;//丢失的数据包个人数
     enum    port_status	states;
-    uint	rx_timeout;
-    float	accuracy;
-    int		ufd;
-    char	st_exit;//通知进程结束
+    uint    rx_timeout;
+    float   accuracy;
+    int     ufd;
+    char    st_exit;//通知进程结束
     pthread_t id;
 } tds_Ch_Data;
 
